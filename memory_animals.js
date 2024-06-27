@@ -1,7 +1,7 @@
 // coded by Lovro Selic , C00lSch00l 2014, 2015
 console.clear();
 /** responsive to host missing */
-const VERSION = "1.08";
+const VERSION = "1.09";
 var PATH = "Sounds/";
 if (window.location.hostname === "chestbook.si") {
     PATH = "https://chestbook.si/wp-content/uploads/Games/Assets/Sounds/";
