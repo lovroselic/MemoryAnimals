@@ -1,8 +1,11 @@
 // coded by Lovro Selic , C00lSch00l 2014, 2015
 console.clear();
 /** responsive to host missing */
-VERSION = "1.08";
-PATH = "Sounds/";
+const VERSION = "1.08";
+var PATH = "Sounds/";
+if (window.location.hostname === "chestbook.si") {
+    PATH = "https://chestbook.si/wp-content/uploads/Games/Assets/Sounds/";
+}
 console.log("Memory V" + VERSION + " (c) 2014, 2016 C00lSch00l, coded by Lovro Selic");
 
 //Prototypes
@@ -28,6 +31,9 @@ Array.prototype.shuffle = function () {
 var MAX_ITEMS = 12;
 /** responsive to host missing */
 var Source = "CoolToolImages/";
+if (window.location.hostname === "chestbook.si") {
+    Source = "https://chestbook.si/wp-content/uploads/Games/Assets/CoolToolImages/";
+}
 var callSRC = ["A BEAR", "A BIRD", "A BUTTERFLY", "A CAT", "A CHICKEN", "A COW", "A DOG", "A DOLPHIN",
     "AN ELEPHANT", "A FISH", "A FOX", "A GIRAFFE", "A HAMSTER", "A HORSE", "A LION", "A MONKEY", "A MOUSE",
     "A PIG", "A RABBIT", "A SNAKE", "A TIGER", "A BEE", "A CAMEL", "A CROCODILE", "A DEER", "A DONKEY", "A DUCK",
